@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Game</title>
+  <!-- for favicon-->
+  <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="gamescreen">
+  <div class = "ths">
+     <button onclick="startgame();"> Leader Board</button>
+    
+     <h1><span id="player"></span></h1>
+  <h1> Score : <span id="score">0</span></h1>
+  </div>
+  
+  
+  
+
+  <div>
+    <table class="container" id="myTable">
+    </table>
+  </div>
+</body>
+<script src="script.js"></script>
+<script>
+  document.getElementById("player").innerText = document.URL.split('=')[1].toUpperCase();
+  document.getElementById("gamescreen").style.backgroundColor =
+    `rgb(${Math.random() * (70) + 160}, 210, ${Math.floor(Math.random() * (70) + 160)})`;
+      function startgame() {
+         window.open("leaderboard.html", "Grid Game", "width=600,height=600");
+      }
+</script>
+
+</html>

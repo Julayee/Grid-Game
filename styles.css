@@ -1,0 +1,66 @@
+
+/* body {
+    background-image: url('images/backgroundimg.jpg');
+} */
+
+
+
+@font-face {
+    font-family: ths;
+    src: url('fonts/unsteady\ oversteer.ttf');
+}
+
+    td,
+    tr {
+        border: 4px solid black;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: xx-large;
+        object-fit: cover;
+    }
+
+    .ths{
+        font-family: ths;
+        text-align: center;
+        color: rgb(13, 8, 58);
+        text-transform: uppercase;
+    }
+    
+    
+    
+    td:hover {
+        cursor: pointer;
+        background-color: chocolate !important;
+    }
+    
+    .brick:hover {
+        cursor : not-allowed;
+    }
+    
+    .container {
+        margin: auto;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+
+    button{
+        width: 10%;
+        background-color: cadetblue;
+        color: black;
+        padding: 10px;
+        /* margin: 40px; */
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-weight: bolder;
+        /* font-family: ths; */
+        text-transform: uppercase;
+        position: absolute;
+        top:40px;
+        right:12%;
+    }
+    
